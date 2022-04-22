@@ -1,3 +1,4 @@
+#https://leetcode.com/problems/roman-to-integer
 class Solution:
     def romanToInt(self, s: str) -> int:
         Ans = 0
@@ -8,3 +9,4 @@ class Solution:
             else: 
                 Ans = Ans + Translation[s[i]]
         return Ans + Translation[s[-1]]
+    print(romanToInt(1,"XXIX"))
